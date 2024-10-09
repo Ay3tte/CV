@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayette El Homadi-Leveque</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS (Animate on Scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mon CV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interets">Centres d'intérêt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5">
+        <!-- Profil -->
+        <section id="profil" class="py-5" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4">Ayette El Homadi-Leveque</h1>
+                    <p class="lead">Étudiante en 2ème année de BUT informatique, passionnée par les mathématiques, la programmation, et l'intelligence artificielle. Je suis curieuse et en constante recherche de nouvelles connaissances.</p>
+                    <p>Je recherche un stage pour janvier 2025 afin de renforcer mes compétences et découvrir de nouvelles opportunités dans le monde de la technologie.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/ayette.jpeg" class="img-fluid rounded id" alt="Photo de profil">
+                </div>
+            </div>
+        </section>
+
+        <!-- Formation -->
+        <section id="formation" class="py-5" data-aos="fade-up">
+            <h2 class="text-center mb-4">Formation</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/tu.jpg" class="card-img-top forma" alt="Erasmus - TU Dublin">
+                        <div class="card-body">
+                            <h5 class="card-title">Semestre d'études Erasmus - TU Dublin</h5>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#detailsErasmus">Voir plus</button>
+                            <div id="detailsErasmus" class="collapse mt-2">
+                                <p>Semestre 3 du Bachelor (BSc) d'informatique (développement logiciel).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/iut.jpg" class="card-img-top forma" alt="BUT Informatique - IUT de Vannes">
+                        <div class="card-body">
+                            <h5 class="card-title">BUT Informatique - IUT de Vannes</h5>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#detailsBUT">Voir plus</button>
+                            <div id="detailsBUT" class="collapse mt-2">
+                                <p>Deuxième année : Parcours Réalisation d'applications et IA.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/lycee.jpg" class="card-img-top forma" alt="Baccalauréat - Lycée Saint-Sauveur">
+                        <div class="card-body">
+                            <h5 class="card-title">Baccalauréat - Lycée Saint-Sauveur</h5>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#detailsBac">Voir plus</button>
+                            <div id="detailsBac" class="collapse mt-2">
+                                <p>Spécialités Mathématiques, Anglais Monde Contemporain. Mention Très Bien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Compétences -->
+        <section id="competences" class="py-5" data-aos="fade-up">
+            <h2 class="text-center mb-4">Compétences</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-code-slash"></i> Langages</h5>
+                    <p>Java, Python, PL/SQL, HTML, CSS, JavaScript</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-globe"></i> Web</h5>
+                    <p>Bootstrap, Django, WordPress</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-database"></i> BDD</h5>
+                    <p>Oracle SQL, MySQL</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-git"></i> Gestion de Version</h5>
+                    <p>Git, GitHub</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-laptop"></i> Systèmes d'Exploitation</h5>
+                    <p>Linux, Windows</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-file-earmark-code"></i> IDE</h5>
+                    <p>VS Code, Eclipse, Jupyter</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Projets dans un carrousel -->
+        <section id="projets" class="py-5 bg-light" data-aos="fade-up">
+            <h2 class="text-center mb-4">Projets</h2>
+            <div id="projetsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Commune bretonnes">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Projet ‘communes bretonnes'</h5>
+                            <p>Développement d'une application JavaFX.</p>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalProjet1">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Initiation Informatique et Robotique">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Initiation à l'informatique et robotique</h5>
+                            <p>Animation de cinq séances d'initiation.</p>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalProjet2">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Compétition CTF">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Participation au CTF 2023</h5>
+                            <p>Compétition de cybersécurité.</p>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalProjet3">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Création de site WordPress">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Création de site WordPress</h5>
+                            <p>Conception d'un site pour la ville de Saint-Gilles-Croix-de-Vie.</p>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalProjet4">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projetsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projetsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Modal pour Projet 1 -->
+        <div class="modal fade" id="modalProjet1" tabindex="-1" aria-labelledby="modalProjet1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProjet1Label">Projet ‘communes bretonnes'</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Détails sur le développement d'une application JavaFX en architecture MVC, intégrant des fonctionnalités CRUD pour la valorisation de données publiques.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal pour Projet 2 -->
+        <div class="modal fade" id="modalProjet2" tabindex="-1" aria-labelledby="modalProjet2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProjet2Label">Initiation à l'informatique et robotique</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ce projet consistait en l'animation de cinq séances d'initiation à l'informatique et à la robotique pour des élèves de CM2, mettant l'accent sur la pédagogie et l'engagement des jeunes.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal pour Projet 3 -->
+        <div class="modal fade" id="modalProjet3" tabindex="-1" aria-labelledby="modalProjet3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProjet3Label">Participation au CTF 2023</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Participation à une compétition de cybersécurité organisée par l'IUT de Vannes, développant mes compétences en matière de sécurité informatique, d'analyse de vulnérabilités et de résolution de problèmes.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal pour Projet 4 -->
+        <div class="modal fade" id="modalProjet4" tabindex="-1" aria-labelledby="modalProjet4Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProjet4Label">Création de site WordPress</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Conception d'un site WordPress pour la ville de Saint-Gilles-Croix-de-Vie, incluant le design, le développement de fonctionnalités personnalisées et l'intégration de contenu.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Centres d'intérêt avec cartes -->
+        <section id="interets" class="py-5" data-aos="fade-up">
+            <h2 class="text-center mb-4">Centres d'intérêt</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Musique">
+                        <div class="card-body">
+                            <h5 class="card-title">Musique</h5>
+                            <p class="card-text">Pratique de la clarinette, du violon et du piano en autodidacte.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Dessin">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin</h5>
+                            <p class="card-text">Spécialité et option Arts Plastiques au lycée, passionnée par le dessin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+            <h2 class="text-center mb-4">Contact</h2>
+            <p class="text-center">Email : <a href="mailto:ayetteelhomadi@yahoo.com">ayetteelhomadi@yahoo.com</a></p>
+            <p class="text-center">Téléphone : 07.82.89.14.01</p>
+            <p class="text-center">Localisation : Vannes, Morbihan (56)</p>
+        </section>
+    </main>
+
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2024 Ayette El Homadi-Leveque</p>
+    </footer>
+
+    <!-- Bootstrap JS and AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
