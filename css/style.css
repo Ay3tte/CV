@@ -3,59 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #f4f4f4;
     scroll-behavior: smooth; /* Défilement fluide */
 }
-
-
 h1, h2, h3, h4, h5, h6 {
     color: #333;
     font-family: 'Courgette', cursive;
 }
-
 h1 {
     font-weight: bold;
     font-size: 3rem;
-
 }
-
 h2 {
     font-weight: bold;
     font-size: 2.5rem;
 }
-
 p {
     font-size: 1.2rem;
 }
-
 .main {
     padding-top: 60px; /* Espace pour ne pas chevaucher le menu */
 }
-
 .navbar {
     padding: 1rem;
 }
-
 .section {
     padding: 4rem;
     text-align: center;
     background-color: #fff;
     margin-bottom: 2rem;
 }
-
 footer {
     text-align: center;
-    padding: 0.5rem;
     background-color: #333;
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
-
 .card {
     display: flex;           
     justify-content: center; 
@@ -63,41 +50,18 @@ footer {
     width: 100%;             
     height: auto;            
 }
-
 .card-title {
     font-size: 1.2rem;
 }
 .card-text {
     font-size: 1rem;
 }
-
 .forma {
     width: 300px; 
     height: 200px;
     object-fit: cover; 
 }
-
 .id {
     width:75%;
     height:auto;
-}
-
-
-
-.carousel-item img {
-    width: 800px;
-    height: 400px;
-    object-fit: cover;  
-}
-
-
-.card-img-top {
-    width: 500px;
-    height: 300px;
-    object-fit: cover; 
-}
-
-
-.modal-dialog {
-    max-width: 80%; 
 }
