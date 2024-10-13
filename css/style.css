@@ -55,6 +55,7 @@ footer {
 }
 .card-text {
     font-size: 1rem;
+    justify-content: left;
 }
 .forma {
     width: 300px; 
