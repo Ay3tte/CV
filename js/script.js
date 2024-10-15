@@ -1,3 +1,14 @@
+// Initialisation des animations AOS
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init(); // Initialisation des animations AOS
+});
+
+// Afficher la modal après le chargement de la page
+window.onload = function() {
+    var constructionModal = new bootstrap.Modal(document.getElementById('constructionModal'));
+    constructionModal.show();
+};
+
 // Basculer entre le thème clair et sombre
 document.getElementById('theme-toggle').addEventListener('click', function () {
     document.body.classList.toggle('dark-mode');
@@ -8,20 +19,20 @@ const translations = {
     en: {
         profilTitle: "Profile",
         profileText: "Second-year IT student, passionate about mathematics, programming, and AI. Always eager to learn new things.",
-        contact: "Contact",
-        formation: "Education",
-        projects: "Projects",
-        interests: "Interests",
-        documents: "Documents"
+        profileStageText: "Looking for an internship in January 2025.",
+        formationTitle: "Education",
+        projectsTitle: "Projects",
+        interestsTitle: "Interests",
+        contactTitle: "Contact"
     },
     fr: {
         profilTitle: "Profil",
-        profileText: "Étudiante en 2ème année de BUT informatique, passionnée par les mathématiques, la programmation et l'IA. Toujours curieuse d'apprendre de nouvelles choses.",
-        contact: "Contact",
-        formation: "Formation",
-        projects: "Projets",
-        interests: "Centres d'intérêt",
-        documents: "Documents"
+        profileText: "Étudiante en 2ème année de BUT informatique, passionnée par les mathématiques, la programmation, et l'intelligence artificielle.",
+        profileStageText: "Je recherche un stage pour janvier 2025.",
+        formationTitle: "Formation",
+        projectsTitle: "Projets",
+        interestsTitle: "Centres d'intérêt",
+        contactTitle: "Contact"
     }
 };
 
@@ -30,9 +41,9 @@ document.getElementById('language-toggle').addEventListener('click', function ()
     currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
     document.getElementById('profilTitle').textContent = translations[currentLanguage].profilTitle;
     document.getElementById('profileText').textContent = translations[currentLanguage].profileText;
-    document.getElementById('contactTitle').textContent = translations[currentLanguage].contact;
-    document.getElementById('formation').textContent = translations[currentLanguage].formation;
-    document.getElementById('projects').textContent = translations[currentLanguage].projects;
-    document.getElementById('interests').textContent = translations[currentLanguage].interests;
-    document.getElementById('documents').textContent = translations[currentLanguage].documents;
+    document.getElementById('profileStageText').textContent = translations[currentLanguage].profileStageText;
+    document.getElementById('formationTitle').textContent = translations[currentLanguage].formationTitle;
+    document.getElementById('projectsTitle').textContent = translations[currentLanguage].projectsTitle;
+    document.getElementById('interestsTitle').textContent = translations[currentLanguage].interestsTitle;
+    document.getElementById('contactTitle').textContent = translations[currentLanguage].contactTitle;
 });
