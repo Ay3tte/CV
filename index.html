@@ -18,7 +18,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,9 @@
                     <li class="nav-item"><a class="nav-link" href="#documents">Documents</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-                <!-- Bouton pour changer de langue -->
-                <button id="language-toggle" class="btn btn-outline-dark ms-2">FR/EN</button>
+                <!-- Bouton pour changer de thème et de langue -->
+                <button id="theme-toggle" class="btn btn-outline-light ms-3">Thème</button>
+                <button id="language-toggle" class="btn btn-outline-light ms-2">FR/EN</button>
             </div>
         </div>
     </nav>
@@ -62,9 +63,9 @@
         <section id="profil" class="py-5" data-aos="fade-up">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h1 class="display-4">Ayette El Homadi-Leveque</h1>
-                    <p class="lead">Étudiante en 2ème année de BUT informatique, passionnée par les mathématiques, la programmation, et l'intelligence artificielle. Je suis curieuse et en constante recherche de nouvelles connaissances.</p>
-                    <p>Je recherche un stage pour janvier 2025 afin de renforcer mes compétences et découvrir de nouvelles opportunités dans le monde professionnel.</p>
+                    <h1 class="display-4" id="profilTitle">Ayette El Homadi-Leveque</h1>
+                    <p class="lead" id="profileText">Étudiante en 2ème année de BUT informatique, passionnée par les mathématiques, la programmation, et l'intelligence artificielle. Je suis curieuse et en constante recherche de nouvelles connaissances.</p>
+                    <p id="profileStageText">Je recherche un stage pour janvier 2025 afin de renforcer mes compétences et découvrir de nouvelles opportunités dans le monde professionnel.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="images/ayette.jpeg" class="img-fluid rounded id" alt="Photo de profil">
@@ -331,9 +332,9 @@
             </div>
         </section>
 
-         <!-- Contact -->
-         <section id="contact" class="py-5" data-aos="fade-up">
-            <h2 class="text-center mb-4">Contact</h2>
+        <!-- Contact -->
+        <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+            <h2 class="text-center mb-4" id="contactTitle">Contact</h2>
             <form action="mailto:ayetteelhomadi@yahoo.com" method="post" enctype="text/plain">
                 <div class="mb-3">
                     <label for="name" class="form-label">Nom</label>
@@ -352,9 +353,8 @@
         </section>
     </main>
 
-    <footer class="text-center py-4 bg-dark text-light">
+    <footer class="text-center py-3 bg-dark text-light">
         <p>&copy; 2024 Ayette El Homadi-Leveque</p>
-        <p>Email: ayetteelhomadi@yahoo.com | Téléphone: +33 7 82 89 14 01 | Adresse: 56000 Vannes, France</p>
     </footer>
 
     <!-- Bootstrap JS and AOS JS -->
