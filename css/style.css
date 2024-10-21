@@ -29,6 +29,10 @@ p {
     font-size: 1.2rem;
 }
 
+.small {
+    font-size: 0.8rem;
+}
+
 .main {
     padding-top: 60px; /* Espace pour ne pas chevaucher le menu */
 }
