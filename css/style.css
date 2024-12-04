@@ -68,7 +68,8 @@ footer {
 
 .card-text {
     font-size: 0.8rem;
-    justify-content: left;
+    justify-content:start;
+    align-items: start;
 }
 
 .forma {
