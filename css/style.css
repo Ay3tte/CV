@@ -83,11 +83,6 @@ footer {
     height: auto;
 }
 
-/* Thème sombre */
-.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
-}
 
 /* Projets - Carousel */
 .carousel-item img {
@@ -114,4 +109,10 @@ footer {
     position: fixed;
     top: 10px;
     right: 10px;
+}
+
+#detailsErasmus, #detailsBUT, #detailsBac {
+    font-size: 0.8rem;
+    justify-content:start;
+    align-items: start;
 }
