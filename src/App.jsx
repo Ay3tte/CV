@@ -609,7 +609,7 @@ const Portfolio = () => {
       <section 
         id="documents" 
         ref={el => sectionRefs.current.documents = el}
-        className="py-20"
+        className="py-32"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -644,7 +644,7 @@ const Portfolio = () => {
       <section 
         id="avenir" 
         ref={el => sectionRefs.current.avenir = el}
-        className="py-20 bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen flex items-center"
+        className="py-32 bg-gradient-to-br from-purple-100 to-pink-100 flex items-center"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
