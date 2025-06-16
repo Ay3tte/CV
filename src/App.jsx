@@ -122,7 +122,8 @@ const Portfolio = () => {
       description: "Application web Vue.js de gestion de tâches",
       image: "images/todo.png",
       details: "Développement d'un site permettant de créer, modifier, trier, et filtrer des tâches",
-      tech: ["Vue.js", "HTML", "CSS (Tailwind)", "JavaScript"]
+      tech: ["Vue.js", "HTML", "CSS (Tailwind)", "JavaScript"],
+      link: "https://ay3tte.github.io/ToDoApp/"
     }
   ];
 
