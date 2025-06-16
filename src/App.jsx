@@ -136,18 +136,61 @@ const Portfolio = () => {
     { name: "TOEIC", file: "docs/toeic.pdf", icon: <Award /> }
   ];
 
-  // Intersection Observer for animations
+  // Scroll detection for active section
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100; // Offset pour la navbar fixe
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      
+      // Si on est proche du bas de la page, activer la dernière section
+      if (scrollPosition + windowHeight >= documentHeight - 50) {
+        setActiveSection('avenir');
+        return;
+      }
+
+      // Sinon, trouve quelle section est actuellement visible
+      for (const item of navItems) {
+        const section = sectionRefs.current[item.id];
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(item.id);
+            break;
+          }
+        }
+      }
+    };
+
+    // Throttle pour performance
+    let ticking = false;
+    const scrollHandler = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', scrollHandler);
+    handleScroll(); // Check initial position
+
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, [navItems]);
+
+  // Intersection Observer for animations only
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             setVisibleSections(prev => new Set([...prev, entry.target.id]));
-            setActiveSection(entry.target.id);
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     Object.values(sectionRefs.current).forEach(ref => {
@@ -601,9 +644,9 @@ const Portfolio = () => {
       <section 
         id="avenir" 
         ref={el => sectionRefs.current.avenir = el}
-        className="py-20 bg-gradient-to-br from-purple-100 to-pink-100"
+        className="py-20 bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen flex items-center"
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Et après ?
           </h2>
