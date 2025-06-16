@@ -78,12 +78,12 @@ const Portfolio = () => {
       title: "Communes bretonnes",
       description: "Application JavaFX",
       image: "images/app.png",
-      details: "Développement d'une application JavaFX en architecture MVC, intégrant des fonctionnalités CRUD pour la valorisation de données publiques.",
+      details: "Développement d'une application JavaFX en architecture MVC, intégrant des fonctionnalités CRUD pour la valorisation et exploitation de données publiques.",
       tech: ["JavaFX", "MVC", "Base de données"]
     },
     {
       id: 2,
-      title: "Initiation Informatique",
+      title: "Initiation informatique",
       description: "Animation pédagogique",
       image: "images/ecole.png",
       details: "Animation de séances d'initiation à l'informatique et robotique pour des élèves de CM1/CM2.",
@@ -96,7 +96,7 @@ const Portfolio = () => {
       description: "Compétition cybersécurité",
       image: "images/ctf.png",
       details: "Participation à une compétition de cybersécurité organisée par le BDE informatique.",
-      tech: ["Cybersécurité", "Analyse", "Problem solving"],
+      tech: ["Cybersécurité", "Analyse", "Résolution de problèmes"],
       link: "https://www.ouest-france.fr/societe/cyberattaque/les-cyberattaques-deviennent-un-jeu-a-liut-de-vannes-1fe8a3d8-a01d-11ee-bd2f-c995ab88b3c3"
     },
     {
@@ -104,7 +104,7 @@ const Portfolio = () => {
       title: "Site WordPress",
       description: "Site web pour Saint-Gilles",
       image: "images/wordpress.png",
-      details: "Conception d'un site WordPress complet avec boutique et blog pour la ville de Saint-Gilles-Croix-de-Vie.",
+      details: "Conception d'un site WordPress complet avec boutique et blog pour la ville de Saint-Gilles-Croix-de-Vie (client fictif).",
       tech: ["WordPress", "Design", "E-commerce"],
       link: "https://youtu.be/KGwULzNjZzc"
     },
@@ -115,6 +115,14 @@ const Portfolio = () => {
       image: "images/audiostore.png",
       details: "Développement d'un site e-commerce complet avec panier, paiement et système d'avis.",
       tech: ["Django", "Python", "JavaScript", "Bootstrap"]
+    },
+    {
+      id: 6,
+      title: "ToDoApp",
+      description: "Application web Vue.js de gestion de tâches",
+      image: "images/todo.png",
+      details: "Développement d'un site permettant de créer, modifier, trier, et filtrer des tâches",
+      tech: ["Vue.js", "HTML", "CSS (Tailwind)", "JavaScript"]
     }
   ];
 
