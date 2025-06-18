@@ -124,6 +124,14 @@ const Portfolio = () => {
       details: "Développement d'un site permettant de créer, modifier, trier, et filtrer des tâches",
       tech: ["Vue.js", "HTML", "CSS (Tailwind)", "JavaScript"],
       link: "https://ay3tte.github.io/ToDoApp/"
+    },
+    {
+      id: 7,
+      title: "ToDoApp Mobile",
+      description: "Application mobile Android de gestion de tâches",
+      image: "images/todomob.png",
+      details: "Développement en Kotlin d'une application permettant de créer, modifier, trier, et filtrer des tâches",
+      tech: ["Kotlin", "Android", "ANdroid Studio", "Gradle"],
     }
   ];
 
@@ -656,7 +664,7 @@ const Portfolio = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               Après mon BUT, j'envisage d'intégrer une école d'ingénieur spécialisée en génie logiciel 
               ou en intelligence artificielle. Mon ambition est de continuer à innover dans le domaine 
-              du numérique en contribuant à des projets innovants et utiles pour la société, 
+              du numérique en contribuant à des projets innovants et utiles, 
               potentiellement dans les secteurs du service public ou de la santé.
             </p>
             <div className="mt-8 flex justify-center">
